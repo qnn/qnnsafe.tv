@@ -1,4 +1,387 @@
 ---
 layout: default
 ---
-qnnsafe.tv
+%body#top{ "data-offset" => "120", "data-spy" => "scroll", "data-target" => ".navbar" }
+  #navbar.navbar.navbar-fixed-top
+    .navbar-inner
+      .container
+        %a.btn.btn-navbar.collapsed{ "data-target" => ".nav-collapse", "data-toggle" => "collapse" }
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.brand
+          Chameleon
+        .nav-collapse.collapse
+          %ul#menu-anchors.nav.pull-right
+            %li.active
+              %a{ href: "#top" } Top
+            %li
+              %a{ href: "#portfolio" } Our work
+            %li
+              %a{ href: "#team" } The Team
+            %li
+              %a{ href: "#services" } Our services
+            %li
+              %a{ href: "#clients" } Clients
+            %li
+              %a{ href: "#connect" } Connect
+            %li
+              %a{ href: "#contact" } Get in touch
+  #myCarousel.carousel.slide{ "data-interval" => "5000", "data-pause" => "hover" }
+    / Carousel items
+    .carousel-inner
+      .active.item
+        .callout.dark-background
+          %h1 Thanks for checking out Chameleon
+          %p The secret of success is doing something you love, doing it well and being recognized for it.
+        %img{ alt: "", src: "img/slider2s.jpg" }/
+      .item
+        %img{ alt: "", src: "img/slider3.gif" }/
+    / Carousel nav
+    %a.carousel-control.left{ "data-slide" => "prev", href: "#myCarousel" } ‹
+    %a.carousel-control.right{ "data-slide" => "next", href: "#myCarousel" } ›
+  / PORTFOLIO SECTION
+  #portfolio.page
+    .container
+      .page-header
+        .page-title
+          %a{ href: "#top" }
+            %h2
+              %span our work
+        %p Take a look at some of the projects we've worked on in the past.
+      .row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="img/work7.jpg" alt="">
+              %img{ alt: "", src: "img/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        #project-name-modal.modal.hide.fade
+          .modal-header
+            %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
+            %h3 Project title
+          .modal-body
+            .row-fluid
+              .span12
+                %img{ alt: "", src: "img/project-placeholder.gif" }/
+            .row-fluid
+              .span8
+                %h4 About this project
+                %p For this project we were working very closely with the ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl. Mauris feugiat diam laoreet tortor convallis ac pharetra velit sodales. Phasellus at arcu ac nibh tincidunt iaculis. Duis mauris enim, gravida.
+              .span4
+                %h4 What we did
+                %ul
+                  %li HTML/CSS coding
+                  %li Illustration
+                  %li Logo design
+            .row-fluid
+              .span4.pull-right
+                %a{ href: "#" } Visit the website
+          .modal-footer
+            %a.btn.btn-square{ "data-dismiss" => "modal" } Close
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="img/work2.jpg" alt="">
+              %img{ alt: "", src: "img/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "img/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+      .row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "img/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "img/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "img/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+  / TEAM SECTION
+  #team.page.even
+    .container
+      .page-header
+        .page-title
+          %a{ href: "#top" }
+            %h2
+              %span the team
+        %p The awesome people that make up our fantastic team.
+      .row.teamrow
+        %dl.span4
+          %dt
+            %img{ alt: "", src: "img/member1.png" }/
+            / Images should be 300x300px
+          %dd
+            %h3
+              %strong Michael
+              Fassbender
+            %p I oversee the crew on their voyage to LV-226, and maintain the ship.
+            .social
+              %p get to know me
+              %ul
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "facebook icon", src: "img/facebookbwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "dribbble icon", src: "img/dribbblebwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "linkedin icon", src: "img/linkedinbwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "twitter icon", src: "img/twitterbwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "google plus icon", src: "img/google_plusbwsq.png" }/
+        %dl.span4
+          %dt
+            %img{ alt: "", src: "img/member2.png" }/
+          %dd
+            %h3
+              %strong Ron
+              Livingston
+            %p I sit in a cubicle, and I update bank software for the two-thousand-switch.
+            .social
+              %p get to know me
+              %ul
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "facebook icon", src: "img/facebookbwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "dribbble icon", src: "img/dribbblebwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "linkedin icon", src: "img/linkedinbwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "twitter icon", src: "img/twitterbwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "google plus icon", src: "img/google_plusbwsq.png" }/
+        %dl.span4
+          %dt
+            %img{ alt: "", src: "img/member3.png" }/
+          %dd
+            %h3
+              %strong Chris
+              Pine
+            %p I stop gigantic runaway trains for a living. With Denzel Washington.
+            .social
+              %p get to know me
+              %ul
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "facebook icon", src: "img/facebookbwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "dribbble icon", src: "img/dribbblebwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "linkedin icon", src: "img/linkedinbwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "twitter icon", src: "img/twitterbwsq.png" }/
+                %li
+                  %a{ href: "#", target: "_blank" }
+                    %img{ alt: "google plus icon", src: "img/google_plusbwsq.png" }/
+  / SERVICES SECTION
+  #services.page
+    .container
+      .page-header
+        .page-title
+          %a{ href: "#top" }
+            %h2
+              %span Our services
+        %p What we can do for your company.
+      .row.servicesrow
+        %dl.span4
+          %dt
+            %i.icon-cogs
+            %strong
+              Design
+              %em> &amp;
+              Back-end
+          %dd
+            %p Consectetur adipiscing elit. Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl.
+        %dl.span4
+          %dt
+            %i.icon-edit
+            %strong
+              Usability
+              %em> &amp;
+              Testing
+          %dd
+            %p Et gravida mi tincidunt eu. Sed vitae orci tellus, ac volutpat nulla. Ut interdum hendrerit venenatis. Aenean id tortor libero. Phasellus gravida lectus purus. Mauris sit amet iaculis nisi.
+        %dl.span4
+          %dt
+            %i.icon-signal
+            %strong
+              Marketing
+              %em> &amp;
+              SEO
+          %dd
+            %p Mauris tincidunt blandit sapien, et gravida mi tincidunt eu. Sed vitae orci tellus, ac volutpat nulla. Ut interdum hendrerit venenatis. Aenean id tortor libero. Mauris sit amet iaculis nisi. Phasellus gravida.
+  / CLIENT SECTION
+  #clients.page.even
+    .container
+      .page-header
+        .page-title
+          %a{ href: "#top" }
+            %h2
+              %span Our clients
+        %p We've helped some of these amazing companies.
+      .row.clientsrow
+        .span3
+          %img{ alt: "", src: "img/client1.png" }/
+          %blockquote
+            %p ”Design is so critical it should be on the agenda of every meeting in every single department.”
+            %small
+              %strong Tom Peters
+              Company Name
+        .span3
+          %img{ alt: "", src: "img/client2.png" }/
+          %blockquote
+            %p ”Simplicity will stand out, while complexity will get lost in the crowd.”
+            %small
+              %strong Kevin Barnett
+              Company Name
+        .span3
+          %img{ alt: "", src: "img/client3.png" }/
+          %blockquote
+            %p ”Typography at its best is a visual form of language linking timelessness and time.”
+            %small
+              %strong Robert Bringhurst
+              Company Name
+        .span3
+          %img{ alt: "", src: "img/client4.png" }/
+          %blockquote
+            %p ”Experts are rarely insulted by something that is clear enough for beginners. Everybody appreciates clarity.”
+            %small
+              %strong Steve Krug
+              Company Name
+  / SOCIAL MEDIA SECTION
+  #connect.page
+    .container
+      .page-header
+        .page-title
+          %a{ href: "#top" }
+            %h2
+              %span Connect
+        %p Follow us and find out what we're up to.
+      .row
+        .span2
+          %a{ href: "#" }
+            %img.social-icon{ alt: "facebook icon", src: "img/facebook-icon.png", title: "facebook" }/
+        .span2
+          %a{ href: "#" }
+            %img.social-icon{ alt: "twitter icon", src: "img/twitter-icon.png", title: "twitter" }/
+        .span2
+          %a{ href: "#" }
+            %img.social-icon{ alt: "google plus icon", src: "img/google-plus-icon.png", title: "google plus" }/
+        .span2
+          %a{ href: "#" }
+            %img.social-icon{ alt: "github icon", src: "img/github-icon.png", title: "github" }/
+        .span2
+          %a{ href: "#" }
+            %img.social-icon{ alt: "pinterest icon", src: "img/pinterest-icon.png", title: "pinterest" }/
+        .span2
+          %a{ href: "#" }
+            %img.social-icon{ alt: "dribbble icon", src: "img/dribbble-icon.png", title: "dribbble" }/
+  / CONTACT INFO SECTION
+  #contact.page.even
+    .container
+      .page-header
+        .page-title
+          %a{ href: "#top" }
+            %h2
+              %span Contact us
+        %p Let us help you bring your project to life.
+      .row.contact-row
+        %form#contact-form
+          .span6
+            %label{ for: "name", style: "display: none" } Your name
+            %input#form-name{ name: "name", placeholder: "Your name", required: "", title: "Please enter your name", type: "text" }/
+            %label{ for: "email", style: "display: none" } Your email address
+            %input#form-email{ name: "email", placeholder: "Your email address", required: "", title: "Please enter a valid email address", type: "email" }/
+            %label{ for: "website", style: "display: none" } Your website (not required)
+            %input#form-name{ name: "name", placeholder: "Your website (not required)", type: "text" }/
+          .span6
+            %label{ for: "message", style: "display: none" } Your message
+            %textarea#contact-message.span6{ name: "message", required: "", rows: "10", title: "You need to enter a message" }
+            %button.btn-submit{ type: "submit" } Send
+      .row.contact-row
+        %address
+          1204 Main Street
+          %br/
+          Sometown, CA
+          %br/
+          12345
+          %br/
+          United States
+      .row
+        #map.span12
+  %footer
+    .container
+      .row
+        .span4
+          .widget-header
+            %h4 A little about us
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt blandit sapien, et gravida mi tincidunt eu. Sed vitae orci tellus, ac volutpat nulla. Ut interdum hendrerit venenatis. Aenean id tortor libero. Mauris sit amet iaculis nisi. Phasellus gravida lectus purus.
+        .span4
+          .widget-header
+            / Edit js/scripts.js to get your own Twitter feed here
+            %h4 Latest tweets
+            #twitter-feed
+        .span4
+          .widget-header
+            %h4 Blog posts
+          %ul.blog-posts
+            %li
+              %h5
+                Update on our secret project
+                %small 12/05/2012
+              %p
+                Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl.
+                %a{ href: "#" } Continue reading
+            %li
+              %h5
+                Welcoming a new member
+                %small 11/28/2012
+              %p
+                Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl.
+                %a{ href: "#" } Continue reading
+            %li
+              %h5
+                A secret black project
+                %small 11/06/2012
+              %p
+                Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl.
+                %a{ href: "#" } Continue reading
+    #copyright.container
+      .row
+        .span12
+          %p
+            %small Chameleon 2012
