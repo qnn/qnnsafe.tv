@@ -1,0 +1,5 @@
+# compress javascripts and stylesheets
+assets:
+  compress:
+    css: sass
+    js:  uglifier

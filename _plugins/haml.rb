@@ -1,0 +1,85 @@
+# https://github.com/samvincent/jekyll-haml
+
+require "haml"
+
+Haml::Options.defaults[:attr_wrapper] = '"'
+
+module Jekyll
+  class Layout
+    def initialize(site, base, name)
+      @site = site
+      @base = base
+      @name = name
+
+      self.data = {}
+
+      self.process(name)
+      self.read_yaml(base, name)
+      self.transform
+    end
+  end
+
+  class HamlPartialTag < Liquid::Tag
+    def initialize(tag_name, file, tokens)
+      super
+      @file = file.strip
+    end
+
+    def render(context)
+      includes_dir = File.join(context.registers[:site].source, '_includes')
+
+      if File.symlink?(includes_dir)
+        return "Includes directory '#{includes_dir}' cannot be a symlink"
+      end
+
+      if @file !~ /^[a-zA-Z0-9_\/\.-]+$/ || @file =~ /\.\// || @file =~ /\/\./
+        return "Include file '#{@file}' contains invalid characters or sequences"
+      end
+
+      return "File must have \".haml\" extension" if @file !~ /\.haml$/
+
+      Dir.chdir(includes_dir) do
+        choices = Dir['**/*'].reject { |x| File.symlink?(x) }
+        if choices.include?(@file)
+          source     = File.read(@file)
+          conversion = ::Haml::Engine.new(source).render
+          partial    = Liquid::Template.parse(conversion)
+          begin
+            return partial.render!(context)
+          rescue => e
+            puts "Liquid Exception: #{e.message} in #{self.data["layout"]}"
+            e.backtrace.each do |backtrace|
+              puts backtrace
+            end
+            abort("Build Failed")
+          end
+
+          context.stack do
+            return partial.render(context)
+          end
+        else
+          "Included file '#{@file}' not found in _includes directory"
+        end
+      end
+    end
+  end
+
+  class HamlConverter < Converter
+    safe true
+    priority :low
+
+    def matches(ext)
+      ext =~ /haml/i
+    end
+
+    def output_ext(ext)
+      ".html"
+    end
+
+    def convert(content)
+      ::Haml::Engine.new(content).render
+    end
+  end
+end
+
+Liquid::Template.register_tag('haml', Jekyll::HamlPartialTag)

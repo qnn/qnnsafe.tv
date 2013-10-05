@@ -1,0 +1,27 @@
+title: QNNSAFE.TV
+
+description: QNNSAFE.TV
+
+url: http://www.qnnsafe.tv
+
+permalink: /:categories/:title.html
+
+relative_permalinks: false
+
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+  cache: true
+  cache_assets: true
+  gzip: []
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - Rakefile
+  - README.md

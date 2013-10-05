@@ -1,0 +1,15 @@
+!!!
+/
+  Generated on {{ site.time }}, using Jekyll, Haml, Sass, CoffeeScript.
+  Source of this website can be found on https://github.com/qnn/qnnsafe.tv
+%html.no-js
+  %head
+    %meta{ charset: "UTF-8" }
+    %title {% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  %body
+    {{ content }}
