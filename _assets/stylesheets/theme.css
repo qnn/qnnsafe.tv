@@ -92,9 +92,13 @@ dl.span4 {
 		
 
 /* Navigation styles */
+
+.navbar .nav {
+  margin-top: 15px;
+}
 		
 .navbar-inner {
-	padding: 30px;
+	padding: 8px;
 }
 
 .nav-collapse .nav > li > a,
@@ -475,7 +479,6 @@ footer h5 {
 #copyright {
 	vertical-align: middle;
 	border-top: 1px solid #444;
-	height: 34px;
 }
 
 #copyright small {
