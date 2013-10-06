@@ -127,86 +127,75 @@ layout: default
             %h2
               %span 全能文化
         %p The awesome people that make up our fantastic team.
-      .row.teamrow
-        %dl.span4
-          %dt
-            %img{ alt: "", src: "/assets/images/member1.png" }/
-            / Images should be 300x300px
-          %dd
-            %h3
-              %strong Michael
-              Fassbender
-            %p I oversee the crew on their voyage to LV-226, and maintain the ship.
-            .social
-              %p get to know me
-              %ul
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "facebook icon", src: "/assets/images/facebookbwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "dribbble icon", src: "/assets/images/dribbblebwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "linkedin icon", src: "/assets/images/linkedinbwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "twitter icon", src: "/assets/images/twitterbwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "google plus icon", src: "/assets/images/google_plusbwsq.png" }/
-        %dl.span4
-          %dt
-            %img{ alt: "", src: "/assets/images/member2.png" }/
-          %dd
-            %h3
-              %strong Ron
-              Livingston
-            %p I sit in a cubicle, and I update bank software for the two-thousand-switch.
-            .social
-              %p get to know me
-              %ul
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "facebook icon", src: "/assets/images/facebookbwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "dribbble icon", src: "/assets/images/dribbblebwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "linkedin icon", src: "/assets/images/linkedinbwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "twitter icon", src: "/assets/images/twitterbwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "google plus icon", src: "/assets/images/google_plusbwsq.png" }/
-        %dl.span4
-          %dt
-            %img{ alt: "", src: "/assets/images/member3.png" }/
-          %dd
-            %h3
-              %strong Chris
-              Pine
-            %p I stop gigantic runaway trains for a living. With Denzel Washington.
-            .social
-              %p get to know me
-              %ul
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "facebook icon", src: "/assets/images/facebookbwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "dribbble icon", src: "/assets/images/dribbblebwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "linkedin icon", src: "/assets/images/linkedinbwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "twitter icon", src: "/assets/images/twitterbwsq.png" }/
-                %li
-                  %a{ href: "#", target: "_blank" }
-                    %img{ alt: "google plus icon", src: "/assets/images/google_plusbwsq.png" }/
+      .row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="/assets/images/work7.jpg" alt="">
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        #project-name-modal.modal.hide.fade
+          .modal-header
+            %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
+            %h3 Project title
+          .modal-body
+            .row-fluid
+              .span12
+                %img{ alt: "", src: "/assets/images/project-placeholder.gif" }/
+            .row-fluid
+              .span8
+                %h4 About this project
+                %p For this project we were working very closely with the ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl. Mauris feugiat diam laoreet tortor convallis ac pharetra velit sodales. Phasellus at arcu ac nibh tincidunt iaculis. Duis mauris enim, gravida.
+              .span4
+                %h4 What we did
+                %ul
+                  %li HTML/CSS coding
+                  %li Illustration
+                  %li Logo design
+            .row-fluid
+              .span4.pull-right
+                %a{ href: "#" } Visit the website
+          .modal-footer
+            %a.btn.btn-square{ "data-dismiss" => "modal" } Close
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="/assets/images/work2.jpg" alt="">
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+      .row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
   / SERVICES SECTION
   #services.page
     .container
