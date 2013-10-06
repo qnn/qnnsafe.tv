@@ -216,34 +216,75 @@ layout: default
             %h2
               %span 安防宣传
         %p What we can do for your company.
-      .row.servicesrow
-        %dl.span4
-          %dt
-            %i.icon-cogs
-            %strong
-              Design
-              %em> &amp;
-              Back-end
-          %dd
-            %p Consectetur adipiscing elit. Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl.
-        %dl.span4
-          %dt
-            %i.icon-edit
-            %strong
-              Usability
-              %em> &amp;
-              Testing
-          %dd
-            %p Et gravida mi tincidunt eu. Sed vitae orci tellus, ac volutpat nulla. Ut interdum hendrerit venenatis. Aenean id tortor libero. Phasellus gravida lectus purus. Mauris sit amet iaculis nisi.
-        %dl.span4
-          %dt
-            %i.icon-signal
-            %strong
-              Marketing
-              %em> &amp;
-              SEO
-          %dd
-            %p Mauris tincidunt blandit sapien, et gravida mi tincidunt eu. Sed vitae orci tellus, ac volutpat nulla. Ut interdum hendrerit venenatis. Aenean id tortor libero. Mauris sit amet iaculis nisi. Phasellus gravida.
+ .row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="/assets/images/work7.jpg" alt="">
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        #project-name-modal.modal.hide.fade
+          .modal-header
+            %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
+            %h3 Project title
+          .modal-body
+            .row-fluid
+              .span12
+                %img{ alt: "", src: "/assets/images/project-placeholder.gif" }/
+            .row-fluid
+              .span8
+                %h4 About this project
+                %p For this project we were working very closely with the ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl. Mauris feugiat diam laoreet tortor convallis ac pharetra velit sodales. Phasellus at arcu ac nibh tincidunt iaculis. Duis mauris enim, gravida.
+              .span4
+                %h4 What we did
+                %ul
+                  %li HTML/CSS coding
+                  %li Illustration
+                  %li Logo design
+            .row-fluid
+              .span4.pull-right
+                %a{ href: "#" } Visit the website
+          .modal-footer
+            %a.btn.btn-square{ "data-dismiss" => "modal" } Close
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="/assets/images/work2.jpg" alt="">
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+      .row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
   / CLIENT SECTION
   #clients.page.even
     .container
@@ -253,35 +294,75 @@ layout: default
             %h2
               %span 全能产品
         %p We've helped some of these amazing companies.
-      .row.clientsrow
-        .span3
-          %img{ alt: "", src: "/assets/images/client1.png" }/
-          %blockquote
-            %p ”Design is so critical it should be on the agenda of every meeting in every single department.”
-            %small
-              %strong Tom Peters
-              Company Name
-        .span3
-          %img{ alt: "", src: "/assets/images/client2.png" }/
-          %blockquote
-            %p ”Simplicity will stand out, while complexity will get lost in the crowd.”
-            %small
-              %strong Kevin Barnett
-              Company Name
-        .span3
-          %img{ alt: "", src: "/assets/images/client3.png" }/
-          %blockquote
-            %p ”Typography at its best is a visual form of language linking timelessness and time.”
-            %small
-              %strong Robert Bringhurst
-              Company Name
-        .span3
-          %img{ alt: "", src: "/assets/images/client4.png" }/
-          %blockquote
-            %p ”Experts are rarely insulted by something that is clear enough for beginners. Everybody appreciates clarity.”
-            %small
-              %strong Steve Krug
-              Company Name
+.row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="/assets/images/work7.jpg" alt="">
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        #project-name-modal.modal.hide.fade
+          .modal-header
+            %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
+            %h3 Project title
+          .modal-body
+            .row-fluid
+              .span12
+                %img{ alt: "", src: "/assets/images/project-placeholder.gif" }/
+            .row-fluid
+              .span8
+                %h4 About this project
+                %p For this project we were working very closely with the ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl. Mauris feugiat diam laoreet tortor convallis ac pharetra velit sodales. Phasellus at arcu ac nibh tincidunt iaculis. Duis mauris enim, gravida.
+              .span4
+                %h4 What we did
+                %ul
+                  %li HTML/CSS coding
+                  %li Illustration
+                  %li Logo design
+            .row-fluid
+              .span4.pull-right
+                %a{ href: "#" } Visit the website
+          .modal-footer
+            %a.btn.btn-square{ "data-dismiss" => "modal" } Close
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="/assets/images/work2.jpg" alt="">
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+      .row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
   / SOCIAL MEDIA SECTION
   #connect.page
     .container
@@ -291,6 +372,84 @@ layout: default
             %h2
               %span 全能漫画
         %p Follow us and find out what we're up to.
+.row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="/assets/images/work7.jpg" alt="">
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        #project-name-modal.modal.hide.fade
+          .modal-header
+            %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
+            %h3 Project title
+          .modal-body
+            .row-fluid
+              .span12
+                %img{ alt: "", src: "/assets/images/project-placeholder.gif" }/
+            .row-fluid
+              .span8
+                %h4 About this project
+                %p For this project we were working very closely with the ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris enim, gravida in lobortis suscipit, condimentum sit amet lectus. Aenean magna purus, feugiat eget feugiat eu, elementum non nisl. Mauris feugiat diam laoreet tortor convallis ac pharetra velit sodales. Phasellus at arcu ac nibh tincidunt iaculis. Duis mauris enim, gravida.
+              .span4
+                %h4 What we did
+                %ul
+                  %li HTML/CSS coding
+                  %li Illustration
+                  %li Logo design
+            .row-fluid
+              .span4.pull-right
+                %a{ href: "#" } Visit the website
+          .modal-footer
+            %a.btn.btn-square{ "data-dismiss" => "modal" } Close
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              / <img src="/assets/images/work2.jpg" alt="">
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+      .row.portfolio-row
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work1.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+        %a{ "data-toggle" => "modal", href: "#project-name-modal" }
+          %dl.span4.portfolio-item
+            %dt
+              %img{ alt: "", src: "/assets/images/work2.png" }/
+            %dd
+              %h3 Project Title
+              %p Brief project description.
+  / CONTACT INFO SECTION
+  #contact.page.even
+    .container
+      .page-header
+        .page-title
+          %a{ href: "#top" }
+            %h2
+              %span 联系我们
+        %p Let us help you bring your project to life.
       .row
         .span2
           %a{ href: "#" }
@@ -310,39 +469,6 @@ layout: default
         .span2
           %a{ href: "#" }
             %img.social-icon{ alt: "dribbble icon", src: "/assets/images/dribbble-icon.png", title: "dribbble" }/
-  / CONTACT INFO SECTION
-  #contact.page.even
-    .container
-      .page-header
-        .page-title
-          %a{ href: "#top" }
-            %h2
-              %span 联系我们
-        %p Let us help you bring your project to life.
-      .row.contact-row
-        %form#contact-form
-          .span6
-            %label{ for: "name", style: "display: none" } Your name
-            %input#form-name{ name: "name", placeholder: "Your name", required: "", title: "Please enter your name", type: "text" }/
-            %label{ for: "email", style: "display: none" } Your email address
-            %input#form-email{ name: "email", placeholder: "Your email address", required: "", title: "Please enter a valid email address", type: "email" }/
-            %label{ for: "website", style: "display: none" } Your website (not required)
-            %input#form-name{ name: "name", placeholder: "Your website (not required)", type: "text" }/
-          .span6
-            %label{ for: "message", style: "display: none" } Your message
-            %textarea#contact-message.span6{ name: "message", required: "", rows: "10", title: "You need to enter a message" }
-            %button.btn-submit{ type: "submit" } Send
-      .row.contact-row
-        %address
-          1204 Main Street
-          %br/
-          Sometown, CA
-          %br/
-          12345
-          %br/
-          United States
-      .row
-        #map.span12
   %footer
     .container
       .row
