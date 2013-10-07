@@ -458,22 +458,15 @@ footer h5 {
 	text-align: center;
 }
 
-.blog-posts, .tweet_list {
+.footer-list {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-	.blog-posts li {
+	.footer-list li {
 		padding-bottom: 10px;
-	}
-
-.tweet_list {
-	text-align: left;
-}
-
-	.tweet_list li {
-		margin-bottom: 10px;
+    text-align: center;
 	}
 
 #copyright {
@@ -487,6 +480,10 @@ footer h5 {
 
 #copyright p {
 	text-align: center;
+}
+
+#copyright .row {
+  margin-bottom: 0;
 }
 
 /*Misc*/
