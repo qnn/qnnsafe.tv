@@ -209,31 +209,31 @@ h2 span:active {
 			top: 4px;
 		}
 	
-	#portfolio h2 span {
+	.page1 h2 span {
 		color: white;
 		background: #D70060;
 		border-bottom: 4px solid #a11051;
 	}
 	
-	#team h2 span {
+	.page2 h2 span {
 		color: white;
 		background: #00A1CB;
 		border-bottom: 4px solid #0090b5;
 	}
 	
-	#services h2 span {
+	.page3 h2 span {
 		color: white;
 		background: #01A4A4;
 		border-bottom: 4px solid #009292;
 	}
 	
-	#connect h2 span {
+	.page4 h2 span {
 		color: white;
 		background: #61AE24;
 		border-bottom: 4px solid #569a1f;
 	}
 	
-	#clients h2 span {
+	.page5 h2 span {
 		color: white;
 		background: #D0D102;
 		border-bottom: 4px solid #b7b815;

@@ -38,213 +38,25 @@ layout: default
         %img{ alt: "", src: "/assets/images/slider3.gif" }/
     %a.carousel-control.left{ "data-slide" => "prev", href: "#myCarousel" } ‹
     %a.carousel-control.right{ "data-slide" => "next", href: "#myCarousel" } ›
-  #portfolio.page
+  {% for video in site.videos %}
+  .page{ class: "page{{ forloop.index }} {% cycle 'odd', 'even' %}" }
     .container
       .page-header
         .page-title
           %a{ href: "#top" }
             %h2
-              %span 全能形象
-        %p Take a look at some of the projects we've worked on in the past.
+              %span {{ video[0] }}
       .row.portfolio-row
-        %a{ "data-toggle" => "modal", href: "#video" }
+        {% for v in video[1] %}
+        %a{ "data-toggle" => "modal", "data-name" => "{{ v[1].name }}", href: "#video" }
           %dl.span4.portfolio-item
             %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
+              %img{ alt: "", src: "{% if v[1].name %}/videos/images/{{ v[1].name }}.jpg{% else %}/assets/images/work1.png{% endif %}" }/
             %dd
-              %h3 全能保险柜之天下无贼
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 保险柜的故事
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 家庭安全守护者
-              %p Brief project description.
-  #team.page.even
-    .container
-      .page-header
-        .page-title
-          %a{ href: "#top" }
-            %h2
-              %span 全能文化
-        %p The awesome people that make up our fantastic team.
-      .row.portfolio-row
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              / <img src="/assets/images/work7.jpg" alt="">
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 冠军精神
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              / <img src="/assets/images/work2.jpg" alt="">
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 香港锁匠学会参观访问
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 牵手相助贫困小学
-              %p Brief project description.
-      .row.portfolio-row
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 橄榄球精神
-              %p Brief project description.
-  #services.page
-    .container
-      .page-header
-        .page-title
-          %a{ href: "#top" }
-            %h2
-              %span 安防宣传
-        %p What we can do for your company.
-      .row.portfolio-row
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              / <img src="/assets/images/work7.jpg" alt="">
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 家居安全在哪里
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              / <img src="/assets/images/work2.jpg" alt="">
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 家庭安全守护者
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 一台保险柜的诞生
-              %p Brief project description.
-  #clients.page.even
-    .container
-      .page-header
-        .page-title
-          %a{ href: "#top" }
-            %h2
-              %span 全能产品
-        %p We've helped some of these amazing companies.
-      .row.portfolio-row
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 全能金库系列介绍
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              / <img src="/assets/images/work2.jpg" alt="">
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-      .row.portfolio-row
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-  #connect.page
-    .container
-      .page-header
-        .page-title
-          %a{ href: "#top" }
-            %h2
-              %span 全能漫画
-        %p Follow us and find out what we're up to.
-      .row.portfolio-row
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-      .row.portfolio-row
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work1.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
-        %a{ "data-toggle" => "modal", href: "#video" }
-          %dl.span4.portfolio-item
-            %dt
-              %img{ alt: "", src: "/assets/images/work2.png" }/
-            %dd
-              %h3 Project Title
-              %p Brief project description.
+              %h3 {{ v[0] }}
+              %p {{ v[1].desc }}
+        {% endfor %}
+  {% endfor %}
   #contact.page.even
     .container
       .page-header

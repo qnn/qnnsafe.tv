@@ -8,6 +8,27 @@ permalink: /:categories/:title.html
 
 relative_permalinks: false
 
+videos:
+  全能形象:
+    全能保险柜之天下无贼:
+      name: tian-xia-wu-zei
+      desc: 天下无贼
+    保险柜的故事:
+    家庭安全守护者:
+  全能文化:
+    冠军精神:
+    香港锁匠学会参观访问:
+    牵手相助贫困小学:
+    橄榄球精神:
+  安防宣传:
+    家居安全在哪里:
+    家庭安全守护者:
+    一台保险柜的诞生:
+  全能产品:
+    全能金库系列介绍:
+  全能漫画:
+    example:
+
 assets:
   dirname: assets
   baseurl: /assets/
