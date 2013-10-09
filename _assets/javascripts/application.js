@@ -5,3 +5,4 @@
 //= require jquery.h5validate
 //= require bootstrap.min
 //= require scripts
+//= require video

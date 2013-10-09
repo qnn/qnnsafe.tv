@@ -3,4 +3,14 @@
  *= require bootstrap-responsive
  *= require font-awesome
  *= require theme
+ *= require video-js.min
  */
+.vjs-default-skin .vjs-big-play-button {
+  left: 50%;
+  margin-left: -2.1em;
+  top: 50%;
+  margin-top: -1.4000000000000001em;
+}
+.vjs-poster {
+  background-color: #000;
+}
