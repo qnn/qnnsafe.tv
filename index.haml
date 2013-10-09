@@ -15,16 +15,10 @@ layout: default
           %ul#menu-anchors.nav.pull-right
             %li.active
               %a{ href: "#top" } 首页
+            {% for video in site.videos %}
             %li
-              %a{ href: "#portfolio" } 全能形象
-            %li
-              %a{ href: "#team" } 全能文化
-            %li
-              %a{ href: "#services" } 安防宣传
-            %li
-              %a{ href: "#clients" } 全能产品
-            %li
-              %a{ href: "#connect" } 全能漫画
+              %a{ href: "#" + "{% for v in video[1] %}{% if forloop.first %}{{ v[1] }}{% endif %}{% endfor %}" } {{ video[0] }}
+            {% endfor %}
             %li
               %a{ href: "#contact" } 联系我们
   #myCarousel.carousel.slide{ "data-interval" => "5000", "data-pause" => "hover" }
@@ -39,7 +33,7 @@ layout: default
     %a.carousel-control.left{ "data-slide" => "prev", href: "#myCarousel" } ‹
     %a.carousel-control.right{ "data-slide" => "next", href: "#myCarousel" } ›
   {% for video in site.videos %}
-  .page{ class: "page{{ forloop.index }} {% cycle 'odd', 'even' %}" }
+  .page{ class: "page{{ forloop.index }} {% cycle 'odd', 'even' %}", id: "{% for v in video[1] %}{% if forloop.first %}{{ v[1] }}{% endif %}{% endfor %}" }
     .container
       .page-header
         .page-title
@@ -47,7 +41,7 @@ layout: default
             %h2
               %span {{ video[0] }}
       .row.portfolio-row
-        {% for v in video[1] %}
+        {% for v in video[1] %}{% if forloop.first %}{% else %}
         %a{ "data-toggle" => "modal", "data-name" => "{{ v[1].name }}", href: "#video" }
           %dl.span4.portfolio-item
             %dt
@@ -55,7 +49,7 @@ layout: default
             %dd
               %h3.video_title {{ v[0] }}
               %p.video_desc {{ v[1].desc }}
-        {% endfor %}
+        {% endif %}{% endfor %}
   {% endfor %}
   #contact.page.even
     .container

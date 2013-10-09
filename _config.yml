@@ -10,6 +10,7 @@ relative_permalinks: false
 
 videos:
   全能形象:
+    name: image
     全能保险柜之天下无贼:
       name: tian-xia-wu-zei
       desc: 天下无贼
@@ -17,17 +18,21 @@ videos:
       name: bao-xian-gui-de-gu-shi
     家庭安全守护者:
   全能文化:
+    name: culture
     冠军精神:
     香港锁匠学会参观访问:
     牵手相助贫困小学:
     橄榄球精神:
   安防宣传:
+    name: safety
     家居安全在哪里:
     家庭安全守护者:
     一台保险柜的诞生:
   全能产品:
+    name: products
     全能金库系列介绍:
   全能漫画:
+    name: animations
     example:
 
 assets:
