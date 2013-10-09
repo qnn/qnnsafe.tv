@@ -481,12 +481,12 @@ footer h5 {
 	color: #A7A7A7;
 }
 
-#copyright p {
+#copyright {
 	text-align: center;
 }
 
 #copyright .row {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 /*Misc*/

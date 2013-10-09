@@ -21,6 +21,7 @@ layout: default
             {% endfor %}
             %li
               %a{ href: "#contact" } 联系我们
+
   #myCarousel.carousel.slide{ "data-interval" => "5000", "data-pause" => "hover" }
     .carousel-inner
       .active.item
@@ -32,6 +33,7 @@ layout: default
         %img{ alt: "", src: "/assets/images/slider3.gif" }/
     %a.carousel-control.left{ "data-slide" => "prev", href: "#myCarousel" } ‹
     %a.carousel-control.right{ "data-slide" => "next", href: "#myCarousel" } ›
+
   {% for video in site.videos %}
   .page{ class: "page{{ forloop.index }} {% cycle 'odd', 'even' %}", id: "{% for v in video[1] %}{% if forloop.first %}{{ v[1] }}{% endif %}{% endfor %}" }
     .container
@@ -51,6 +53,7 @@ layout: default
               %p.video_desc {{ v[1].desc }}
         {% endif %}{% endfor %}
   {% endfor %}
+
   #contact.page.even
     .container
       .page-header
@@ -58,7 +61,6 @@ layout: default
           %a{ href: "#top" }
             %h2
               %span 联系我们
-        %p Let us help you bring your project to life.
       .row
         .span3
           %a{ "data-toggle" => "modal", href: "#weixin-modal" }
@@ -72,20 +74,22 @@ layout: default
         .span3
           %a{ href: "http://mall.jd.com/index-18613.html", target: "_blank" }
             %img.social-icon{ alt: "全能保险柜京东店", src: "/assets/images/jd.png", title: "全能保险柜京东店" }/
-    #weixin-modal.modal.hide.fade
-      .modal-header
-        %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
-        %h3 扫描微信二维码添加全能微信服务号
-      .modal-body
-        .weixinqrcode
-          %img{ src: "/assets/images/weixin_qrcode.png" }
-      .modal-footer
-        %a.btn.btn-square{ "data-dismiss" => "modal" } 关闭
+  #weixin-modal.modal.hide.fade
+    .modal-header
+      %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
+      %h3 扫描微信二维码添加全能微信服务号
+    .modal-body
+      .weixinqrcode
+        %img{ src: "/assets/images/weixin_qrcode.png" }
+    .modal-footer
+      %a.btn.btn-square{ "data-dismiss" => "modal" } 关闭
+
   #video.modal.hide.fade
     .modal-header
       %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
       %h3#video_title
     #video_container.modal-body
+
   %footer
     .container
       .row
@@ -98,24 +102,18 @@ layout: default
             %h4 联系电话
           %ul.footer-list
             %li
-              %h5
-                总部电话：0757-22308180
-              %h5
-                全国免费服务热线：400-830-4555
-              %h5
-                售后服务热线：0757-22308180
-              %h5
-                总部电话：0757-22308180
-              %h5
-                总部电话：0757-22308180
-              %h5
-                总部电话：0757-22308180
+              %h5 总部电话：0757-22308180
+              %h5 全国免费服务热线：400-830-4555
+              %h5 售后服务热线：0757-22308180
+              %h5 总部电话：0757-22308180
+              %h5 总部电话：0757-22308180
+              %h5 总部电话：0757-22308180
     #copyright.container
       .row
         .span12
-          %p
-            %small &copy; 1999-2013 广东安能保险柜制造有限公司
+          %small
+            &copy; 1999-2013 广东安能保险柜制造有限公司
             %a{ href: "{{ site.www.qnnsafe.tv }}/Sitemap.xml" }Sitemap
             %br
-            %small 网站建设维护与优化：
+            网站建设维护与优化：
             %a{ href: "http://www.8html.com/" }8HTML
