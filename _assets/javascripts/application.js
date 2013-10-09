@@ -2,7 +2,6 @@
 //= require jquery
 //= require jquery.localscroll-1.2.7-min
 //= require jquery.scrollTo-1.4.3.1-min
-//= require jquery.h5validate
 //= require bootstrap.min
 //= require scripts
 //= require video

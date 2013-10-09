@@ -9,24 +9,16 @@ jQuery ($) ->
     e.preventDefault()
     $.scrollTo 0, 0
 
-  
   # Initialize the slider
   $("#myCarousel").carousel()
-  
-  # HTML5 form validation fallback stuff	
-  unless Modernizr.input.placeholder
-    $("#contact-form label").each ->
-      $(this).show()
-
-    $("#contact-form input").each ->
-      $(this).attr("placeholder", "").addClass "smaller-input"
-
-  $("#contact-form").h5Validate()  if typeof document.createElement("input").checkValidity isnt "function"
 
   $(document).on 'click', '[data-toggle="modal"]', ->
     if $(this).attr('href') == '#video'
       $('#video_title').text($(this).find('.video_title').text())
+      name = $(this).data('name')
+      $('#video_container').html('<video id="video-player" class="video-js vjs-default-skin" controls data-setup="{}" poster="' + $(this).find('.video_image').attr('src') + '" preload="none" height="298" width="530"><source src="http://www.qnnsafe.tv/mp4/' + name + '.mp4" type="video/mp4"></source></video>')
+      _V_("video-player")
 
   $('#video').on 'hidden.bs.modal', ->
-    video = _V_('#video-player')
-    video.pause()
+    video = _V_('video-player')
+    video.dispose()

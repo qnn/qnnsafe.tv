@@ -51,7 +51,7 @@ layout: default
         %a{ "data-toggle" => "modal", "data-name" => "{{ v[1].name }}", href: "#video" }
           %dl.span4.portfolio-item
             %dt
-              %img{ alt: "", src: "{% if v[1].name %}/videos/images/{{ v[1].name }}.jpg{% else %}/assets/images/work1.png{% endif %}" }/
+              %img.video_image{ alt: "", src: "{% if v[1].name %}/videos/images/{{ v[1].name }}.jpg{% else %}/assets/images/work1.png{% endif %}" }/
             %dd
               %h3.video_title {{ v[0] }}
               %p.video_desc {{ v[1].desc }}
@@ -90,10 +90,8 @@ layout: default
   #video.modal.hide.fade
     .modal-header
       %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
-      %h3#video_title N/A
-    .modal-body
-      %video#video-player.video-js.vjs-default-skin{ controls: "", "data-setup" => "{}", height: "298", poster: "/videos/images/tian-xia-wu-zei.jpg", preload: "none", width: "530" }
-        %source{ src: "http://video-js.zencoder.com/oceans-clip.mp4", type: "video/mp4" }
+      %h3#video_title
+    #video_container.modal-body
   %footer
     .container
       .row
