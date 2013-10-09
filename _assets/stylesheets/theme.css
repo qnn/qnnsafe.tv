@@ -244,7 +244,10 @@ h2 span:active {
 		background: #E54028;
 		border-bottom: 4px solid #cb3922;
 	}
-	
+  
+  #contact .row {
+    text-align: center;
+  }
 		
 /* Social media section styles */	
 		
@@ -666,4 +669,13 @@ h2 {
 		margin: 0 35px;
 		margin-top: 10px;
 	}
+}
+
+.weixinqrcode {
+  text-align: center;
+}
+
+.weixinqrcode img {
+  width: auto;
+  max-width: 100%;
 }

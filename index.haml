@@ -369,24 +369,27 @@ layout: default
               %span 联系我们
         %p Let us help you bring your project to life.
       .row
-        .span2
-          %a{ href: "#" }
+        .span3
+          %a{ "data-toggle" => "modal", href: "#weixin-modal" }
             %img.social-icon{ alt: "全能保险柜官方微信", src: "/assets/images/weixin.png", title: "微信" }/
-        .span2
-          %a{ href: "http://weibo.qnnsafe.com" }
+        .span3
+          %a{ href: "http://weibo.qnnsafe.com", target: "_blank" }
             %img.social-icon{ alt: "全能保险柜官方微博", src: "/assets/images/weibo.png", title: "微博" }/
-        .span2
-          %a{ href: "http://www.qnnsafe.com" }
-            %img.social-icon{ alt: "全能保险柜官网", src: "/assets/images/google-plus-icon.png", title: "全能保险柜官网" }/
-        .span2
-          %a{ href: "http://www.qnnsafe.com.cn" }
-            %img.social-icon{ alt: "全能保险柜加盟网", src: "/assets/images/github-icon.png", title: "全能保险柜加盟网" }/
-        .span2
+        .span3
           %a{ href: "#" }
             %img.social-icon{ alt: "全能保险柜天猫旗舰店", src: "/assets/images/pinterest-icon.png", title: "全能保险柜天猫旗舰店" }/
-        .span2
+        .span3
           %a{ href: "#" }
             %img.social-icon{ alt: "全能保险柜京东店", src: "/assets/images/jd.png", title: "全能保险柜京东店" }/
+    #weixin-modal.modal.hide.fade
+      .modal-header
+        %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
+        %h3 扫描微信二维码添加全能微信服务号
+      .modal-body
+        .weixinqrcode
+          %img{ src: "/assets/images/weixin_qrcode.png" }
+      .modal-footer
+        %a.btn.btn-square{ "data-dismiss" => "modal" } 关闭
   %footer
     .container
       .row
