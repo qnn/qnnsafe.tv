@@ -53,8 +53,8 @@ layout: default
             %dt
               %img{ alt: "", src: "{% if v[1].name %}/videos/images/{{ v[1].name }}.jpg{% else %}/assets/images/work1.png{% endif %}" }/
             %dd
-              %h3 {{ v[0] }}
-              %p {{ v[1].desc }}
+              %h3.video_title {{ v[0] }}
+              %p.video_desc {{ v[1].desc }}
         {% endfor %}
   {% endfor %}
   #contact.page.even
@@ -90,12 +90,10 @@ layout: default
   #video.modal.hide.fade
     .modal-header
       %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
-      %h3 全能保险柜之天下无贼
+      %h3#video_title N/A
     .modal-body
-      %video.video-js.vjs-default-skin{ controls: "", "data-setup" => "{}", height: "298", poster: "/videos/images/tian-xia-wu-zei.jpg", preload: "none", width: "530" }
+      %video#video-player.video-js.vjs-default-skin{ controls: "", "data-setup" => "{}", height: "298", poster: "/videos/images/tian-xia-wu-zei.jpg", preload: "none", width: "530" }
         %source{ src: "http://video-js.zencoder.com/oceans-clip.mp4", type: "video/mp4" }
-    .modal-footer
-      %a.btn.btn-square{ "data-dismiss" => "modal" } Close
   %footer
     .container
       .row
