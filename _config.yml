@@ -30,11 +30,15 @@ videos:
   安防宣传:
     name: safety
     家居安全在哪里:
+      name: jia-ju-an-quan
     家庭安全守护者:
+      name: jia-ting-fang-dao
     一台保险柜的诞生:
+      name: bao-xian-gui-de-dan-sheng
   全能产品:
     name: products
     全能金库系列介绍:
+      name: product-jin-ku
   全能漫画:
     name: animations
     example:
