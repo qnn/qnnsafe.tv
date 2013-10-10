@@ -25,8 +25,8 @@ jQuery ($) ->
       $('#video_container').html('<video id="video-player" class="video-js vjs-default-skin" controls data-setup="{}" poster="' + $(this).find('.video_image').attr('src') + '" preload="none" height="298" width="100%"><source src="http://www.qnnsafe.tv/mp4/' + name + '.mp4" type="video/mp4"></source></video>')
       _V_("video-player")
 
+  $('#video_fullscreen').click (e) -> _V_("video-player").requestFullScreen()
+
   $('#video').on 'shown.bs.modal', -> resizeVJS()
 
-  $('#video').on 'hidden.bs.modal', ->
-    video = _V_('video-player')
-    video.dispose()
+  $('#video').on 'hidden.bs.modal', -> _V_('video-player').dispose()

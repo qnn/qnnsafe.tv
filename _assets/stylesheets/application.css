@@ -14,6 +14,24 @@
 .vjs-poster {
   background-color: #000;
 }
-a {
+#video .modal-footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+#video .modal-footer button.close {
+  margin-top: 17px;
+}
+#video_fullscreen {
+  float: right;
+  display: none;
+  margin-right: 10px;
+}
+a, button {
   -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+@media screen and (orientation:landscape) and (max-width: 600px) {
+  #video_fullscreen {
+    display: block;
+  }
 }
