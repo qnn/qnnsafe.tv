@@ -41,10 +41,10 @@ layout: default
               %span {{ video[0] }}
       .row.portfolio-row
         {% for v in video[1] %}{% if forloop.first %}{% else %}
-        %a{ "data-toggle" => "modal", "data-name" => "{{ v[1].name }}", href: "#video" }
+        %a{ "data-toggle" => "modal", "data-name" => "{% if v[1].name %}{{ v[1].name }}{% else %}{{ v[1] }}{% endif %}", href: "#video" }
           %dl.span4.portfolio-item
             %dt
-              %img.video_image{ alt: "", src: "{% if v[1].name %}/videos/images/{{ v[1].name }}.jpg{% else %}/assets/images/work1.png{% endif %}" }/
+              %img.video_image{ alt: "", src: "{% if v[1].name %}/videos/images/{{ v[1].name }}.jpg{% else %}{% if v[1] %}/videos/images/{{ v[1] }}.jpg{% else %}/assets/images/work1.png{% endif %}{% endif %}" }/
             %dd
               %h3.video_title {{ v[0] }}
               %p.video_desc {{ v[1].desc }}

@@ -11,46 +11,29 @@ relative_permalinks: false
 videos:
   全能形象:
     name: image
-    全能保险柜之天下无贼:
-      name: tian-xia-wu-zei
-    保险柜的故事:
-      name: bao-xian-gui-de-gu-shi
-    家庭安全守护者:
-      name: an-quan-shou-hu-zhe
+    全能保险柜之天下无贼: tian-xia-wu-zei
+    保险柜的故事: bao-xian-gui-de-gu-shi
+    家庭安全守护者: an-quan-shou-hu-zhe
   全能文化:
     name: culture
-    冠军精神:
-      name: guan-jun
-    香港锁匠学会参观访问:
-      name: xiang-gang-suo-jiang-xue-hui
-    牵手相助贫困小学:
-      name: ai-xin
-    橄榄球精神:
-      name: gan-lan-qiu
+    冠军精神: guan-jun
+    香港锁匠学会参观访问: xiang-gang-suo-jiang-xue-hui
+    牵手相助贫困小学: ai-xin
+    橄榄球精神: gan-lan-qiu
   安防宣传:
     name: safety
-    家居安全在哪里:
-      name: jia-ju-an-quan
-    家庭安全守护者:
-      name: jia-ting-fang-dao
-    一台保险柜的诞生:
-      name: bao-xian-gui-de-dan-sheng
+    家居安全在哪里: jia-ju-an-quan
+    家庭安全守护者: jia-ting-fang-dao
+    一台保险柜的诞生: bao-xian-gui-de-dan-sheng
   全能产品:
     name: products
-    全能金库系列介绍:
-      name: product-jin-ku
-    防盗保管箱2243使用说明:
-      name: product-2243
-    全能保险柜CX-1625使用说明:
-      name: product-cx1625
-    全能保险柜JD-3340使用说明:
-      name: product-jd3340
-    全能保险柜JD-4538使用说明:
-      name: product-jd4538
-    全能保险柜iBox钢甲小宝使用说明:
-      name: product-ibox
-    全能保险柜LG-2535使用说明:
-      name: product-lg2535
+    全能金库系列介绍: product-jin-ku
+    防盗保管箱2243使用说明: product-2243
+    全能保险柜CX-1625使用说明: product-cx1625
+    全能保险柜JD-3340使用说明: product-jd3340
+    全能保险柜JD-4538使用说明: product-jd4538
+    全能保险柜iBox钢甲小宝使用说明: product-ibox
+    全能保险柜LG-2535使用说明: product-lg2535
   全能动画:
     name: animations
     暂无动画:
