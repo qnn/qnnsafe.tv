@@ -35,3 +35,9 @@ a, button {
     display: block;
   }
 }
+#myCarousel {
+  margin-top: 89px;
+}
+#myCarousel img {
+  width: 100%;
+}
