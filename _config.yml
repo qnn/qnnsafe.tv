@@ -40,18 +40,20 @@ videos:
     全能金库系列介绍:
       name: product-jin-ku
     防盗保管箱2243使用说明:
-      name: product-jin-ku
+      name: product-2243
     全能保险柜CX-1625使用说明:
-      name: product-jin-ku
+      name: product-cx1625
     全能保险柜JD-3340使用说明:
-      name: product-jin-ku
+      name: product-jd3340
+    全能保险柜JD-4538使用说明:
+      name: product-jd4538
     全能保险柜iBox钢甲小宝使用说明:
-      name: product-jin-ku
+      name: product-ibox
     全能保险柜LG-2535使用说明:
-      name: product-jin-ku
-  全能漫画:
+      name: product-lg2535
+  全能动画:
     name: animations
-    暂无漫画:
+    暂无动画:
 
 assets:
   dirname: assets
