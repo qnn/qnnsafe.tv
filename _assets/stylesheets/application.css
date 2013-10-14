@@ -41,3 +41,8 @@ a, button {
 #myCarousel img {
   width: 100%;
 }
+@media screen and (max-width: 980px) {
+  #myCarousel {
+    margin-top: 0;
+  }
+}
