@@ -40,7 +40,14 @@ layout: default
             %h2
               %span {{ video[0] }}
       .row.portfolio-row
-        {% for v in video[1] %}{% if forloop.first %}{% else %}
+        {% for v in video[1] %}{% if forloop.first %}{% else %}{% if v[1].youku %}
+        %a{ "data-toggle" => "modal", "data-id" => "{{ v[1].youku }}", href: "#youku" }
+          %dl.span4.portfolio-item
+            %dt
+              %img.video_image{ alt: "", src: "/videos/images/{{ v[1].youku }}.jpg" }/
+            %dd
+              %h3.video_title {{ v[0] }}
+        {% else %}
         %a{ "data-toggle" => "modal", "data-name" => "{% if v[1].name %}{{ v[1].name }}{% else %}{{ v[1] }}{% endif %}", href: "#video" }
           %dl.span4.portfolio-item
             %dt
@@ -48,7 +55,7 @@ layout: default
             %dd
               %h3.video_title {{ v[0] }}
               %p.video_desc {{ v[1].desc }}
-        {% endif %}{% endfor %}
+        {% endif %}{% endif %}{% endfor %}
   {% endfor %}
 
   #contact.page.even
@@ -94,6 +101,13 @@ layout: default
       %button#video_fullscreen.btn.btn-square{ type: "button" } 全屏
       %h3#video_title
     #video_container.modal-body
+
+  #youku.modal.hide.fade
+    .modal-header
+      %button.close{ "aria-hidden" => "true", "data-dismiss" => "modal", type: "button" } ×
+      %h3#youku_title
+    #youku_container.modal-body
+      %iframe#youku_player{ height: 333, width: 530, src: "", frameborder: 0, allowfullscreen: "allowfullscreen" }
 
   %footer
     .container

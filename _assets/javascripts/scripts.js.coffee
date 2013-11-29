@@ -25,8 +25,18 @@ jQuery ($) ->
       $('#video_container').html('<video id="video-player" class="video-js vjs-default-skin" controls data-setup="{}" poster="' + $(this).find('.video_image').attr('src') + '" preload="none" height="298" width="100%"><source src="http://www.qnnsafe.tv/mp4/' + name + '.mp4" type="video/mp4"></source></video>')
       _V_("video-player")
 
+    else if $(this).attr('href') == '#youku'
+      $('#youku_title').text($(this).find('.video_title').text())
+      $('#youku_player').attr('src', 'http://player.youku.com/embed/' + $(this).data('id'));
+
   $('#video_fullscreen').click (e) -> _V_("video-player").requestFullScreen()
 
   $('#video').on 'shown.bs.modal', -> resizeVJS()
 
   $('#video').on 'hidden.bs.modal', -> _V_('video-player').dispose()
+
+  $('#youku').on 'shown.bs.modal', ->
+    width = $('#youku_container').width()
+    $('#youku_player').width(width).height(width * 9 / 16 + 35)
+
+  $('#youku').on 'hidden.bs.modal', -> $('#youku_player').attr('src', '')
